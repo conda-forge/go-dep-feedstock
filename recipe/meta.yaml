@@ -1,5 +1,5 @@
 {% set goname = "github.com/golang/dep" %}
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/", "\\" if win else "/") %}
@@ -11,7 +11,7 @@ package:
 source:
   - folder: {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz  # [unix]
-    sha256: 7522588ce2d988039b15c6a7584f854223606e6ffb37c180c11b5000906a846e  # [unix]
+    sha256: 929c8f759838f98323211ba408a831ea80d93b75beda8584b6d950f393a3298a  # [unix]
     git_url: https://{{ goname }}  # [win]
     git_tag: v{{ version }}  # [win]
 
