@@ -1,12 +1,8 @@
 channel_sources:
 - conda-forge,defaults
 channel_targets:
-- conda-forge gcc7
+- conda-forge main
 go_compiler:
 - go-nocgo
-target_gobin:
-- '%PREFIX%\bin\'
-target_goexe:
-- .exe
 target_platform:
 - win-64

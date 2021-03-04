@@ -29,7 +29,8 @@ test:
   requires:         # [win]
     - m2-coreutils  # [win]
   commands:
-    - test -x {{target_gobin}}dep{{target_goexe}}
+    - "${PREFIX}/bin/dep"           # [unix]
+    - "%PREFIX%\\bin\\dep.exe"        # [win]
     - dep version
 
 about:
