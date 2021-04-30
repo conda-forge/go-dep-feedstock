@@ -16,7 +16,7 @@ source:
     git_tag: v{{ version }}  # [win]
 
 build:
-  number: 1
+  number: 2
   script:
     - pushd {{ pkg_src }}
     - export GOPATH=$SRC_DIR  # [unix]
@@ -45,6 +45,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - sodre
     - adbeda
     - rluria14
