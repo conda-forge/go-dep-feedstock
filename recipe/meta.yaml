@@ -16,7 +16,7 @@ source:
     git_tag: v{{ version }}  # [win]
 
 build:
-  number: 2
+  number: 3
   script:
     - pushd {{ pkg_src }}
     - export GOPATH=$SRC_DIR  # [unix]
